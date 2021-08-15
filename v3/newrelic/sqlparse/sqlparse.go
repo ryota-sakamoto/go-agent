@@ -67,4 +67,6 @@ func ParseQuery(segment *newrelic.DatastoreSegment, query string) {
 			}
 		}
 	}
+
+	segment.ParameterizedQuery = query
 }
